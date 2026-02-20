@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAK THE LOOP | Built by YUDA YUDIANSYAH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grainy-bg">
+
+    <div id="custom-cursor"></div>
+
+    <nav class="flex justify-between items-center p-6 border-b border-white/10 sticky top-0 bg-black/80 backdrop-blur-md z-50">
+        <div class="text-xl font-black tracking-tighter italic">BREAK THE LOOP</div>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-[0.3em] font-bold">
+            <a href="#" class="hover:text-gray-400 transition">Archive</a>
+            <a href="#" class="hover:text-gray-400 transition">Project</a>
+            <a href="#" class="hover:text-gray-400 transition">Contact</a>
+        </div>
+        <button class="bg-white text-black px-6 py-2 text-xs font-black uppercase hover:scale-110 transition-transform">Buy Now</button>
+    </nav>
+
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-7xl md:text-9xl font-black tracking-tighter mb-6 text-glow">
+                REWRITE<br>THE RULES.
+            </h1>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <p class="max-w-2xl text-gray-500 text-lg md:text-xl mb-10 leading-relaxed">
+                Otak lo haus validasi? Break the loop. <br class="hidden md:block"> Fokus ngebangun dinasti digital dengan estetika yang tak tertandingi.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6" data-aos="zoom-in" data-aos-delay="600">
+            <a href="#" class="bg-white text-black px-10 py-5 font-black uppercase tracking-widest hover:bg-transparent hover:text-white border border-white transition-all">
+                Dapatkan Template
+            </a>
+            <a href="#" class="border border-white/20 px-10 py-5 font-black uppercase tracking-widest hover:bg-white/5 transition">
+                Live Preview
+            </a>
+        </div>
+    </header>
+
+    <section class="py-32 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-10" data-aos="fade-right">
+                <span class="text-4xl mb-6 block">01</span>
+                <h3 class="text-2xl font-black mb-4 uppercase">Anti-Mainstream</h3>
+                <p class="text-gray-500">Desain yang berani keluar dari template membosankan di pasaran.</p>
+            </div>
+            <div class="glass-card p-10" data-aos="fade-up" data-aos-delay="200">
+                <span class="text-4xl mb-6 block">02</span>
+                <h3 class="text-2xl font-black mb-4 uppercase">Fast as Hell</h3>
+                <p class="text-gray-500">Kodingan efisien. Karena setiap detik adalah uang bagi dinasti Anda.</p>
+            </div>
+            <div class="glass-card p-10" data-aos="fade-left" data-aos-delay="400">
+                <span class="text-4xl mb-6 block">03</span>
+                <h3 class="text-2xl font-black mb-4 uppercase">Garut Pride</h3>
+                <p class="text-gray-500">Kualitas global, jiwa lokal. Karya asli anak bangsa yang siap mendunia.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-20 text-center border-t border-white/5 bg-black">
+        <p class="text-xs tracking-[0.5em] text-gray-700 font-black mb-4">GARUT 44161 - WEST JAVA</p>
+        <p class="text-sm text-gray-500 italic">© 2026 BREAK THE LOOP. Built by YUDA YUDIANSYAH ASAL GARUT.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({ once: true });
+
+        // Custom Cursor Logic
+        const cursor = document.getElementById('custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Hover effect for cursor
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.style.transform = 'scale(3)');
+            el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
+        });
+    </script>
+</body>
+</html>
