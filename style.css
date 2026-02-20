@@ -1,0 +1,40 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+            cursor: none; /* Sembunyikan kursor asli */
+        }
+
+        /* Custom Cursor Style */
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s ease;
+        }
+
+        .grainy-bg {
+            background-image: url('https://www.transparenttextures.com/patterns/p6-dark.png');
+        }
+
+        .text-glow:hover {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            transition: 0.3s;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px border rgba(255, 255, 255, 0.1);
+        }
+    
